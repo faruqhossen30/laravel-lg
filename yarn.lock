@@ -134,6 +134,11 @@
   "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz"
   "version" "2.11.8"
 
+"@preline/dropdown@^2.0.2":
+  "integrity" "sha512-Y3daIlYPWqkFmO4ONOInZQC2y3PT/pAZE/4THN2gOm4kRhVLW7/EMpv2xHHzzvw2e7XmPYXOUafKFgFWnVxSww=="
+  "resolved" "https://registry.npmjs.org/@preline/dropdown/-/dropdown-2.0.2.tgz"
+  "version" "2.0.2"
+
 "@simonwep/pickr@^1.8.2":
   "integrity" "sha512-/l5w8BIkrpP6n1xsetx9MWPWlU6OblN5YgZZphxan0Tq4BByTCETL6lyIeY8lagalS2Nbt4F2W034KHLIiunKA=="
   "resolved" "https://registry.npmjs.org/@simonwep/pickr/-/pickr-1.8.2.tgz"

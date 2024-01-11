@@ -17,10 +17,12 @@
         <div class="2xl:w-1/4 lg:w-1/3 md:w-1/2 w-full">
             <div class="card overflow-hidden sm:rounded-md rounded-none">
                 <div class="p-6">
-                    <a href="#" class="block mb-8">
-                        <img class="h-6 block dark:hidden" src="/images/logo-dark.png" alt="">
-                        <img class="h-6 hidden dark:block" src="/images/logo-light.png" alt="">
-                    </a>
+                    <div class="flex justify-center">
+                        <a href="{{route('homepage')}}" class="block mb-8">
+                            <img class="h-20 block dark:hidden" src="{{asset('logo.png')}}" alt="">
+                            <img class="h-20 hidden dark:block" src="{{asset('logo.png')}}" alt="">
+                        </a>
+                    </div>
 
                     <form method="POST" action="{{ route('login') }}">
                         @csrf

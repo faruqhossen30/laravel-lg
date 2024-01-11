@@ -5,7 +5,7 @@ module.exports = {
         './resources/**/*.blade.php',
         './resources/**/*.js',
         './resources/**/*.vue',
-        'node_modules/preline/dist/*.js',
+        './node_modules/flowbite/**/*.js'
     ],
     darkMode: ['class', '[data-mode="dark"]'],
     theme: {
@@ -20,12 +20,10 @@ module.exports = {
 
         extend: {
             colors: {
+                'brand': '#C20000',
                 'primary': '#3073F1',
-
                 'secondary': '#68625D',
-
                 'success': '#1CB454',
-
                 'warning': '#E2A907',
 
                 'info': '#0895D8',
@@ -48,7 +46,6 @@ module.exports = {
         require('@tailwindcss/forms'),
         require('@tailwindcss/typography'),
         require('@tailwindcss/aspect-ratio'),
-        require('preline/plugin')
-
+        require('flowbite/plugin')
     ],
 }

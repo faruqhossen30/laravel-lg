@@ -17,7 +17,6 @@
     },
     "dependencies": {
         "@frostui/tailwindcss": "^0.1.5",
-        "@preline/dropdown": "^2.0.2",
         "@simonwep/pickr": "^1.8.2",
         "@tailwindcss/aspect-ratio": "^0.4.2",
         "@tailwindcss/forms": "^0.5.3",
@@ -29,6 +28,7 @@
         "dropzone": "^5.9.0",
         "feather-icons": "^4.29.0",
         "flatpickr": "^4.6.13",
+        "flowbite": "^2.2.1",
         "fullcalendar": "6.1.6",
         "glightbox": "^3.2.0",
         "gmaps": "^0.4.25",
@@ -38,7 +38,6 @@
         "nice-select2": "^2.1.0",
         "nouislider": "^15.6.1",
         "plyr": "^3.7.8",
-        "preline": "^2.0.3",
         "prismjs": "^1.29.0",
         "pristinejs": "^1.1.0",
         "quill": "^1.3.7",

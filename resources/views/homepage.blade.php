@@ -1,19 +1,16 @@
 @extends('layout.app')
 @section('content')
     @include('inc.homepage.slider')
-
-
-
     <!--After Slider Start-->
     <div class="container grid grid-cols-12">
-        <div class="p-7 col-span-3">
+        <div class="col-span-6 lg:col-span-3 p-7">
             <div class="mb-7">
                 <img src="/img/Icons/free-shipping.png" alt="">
             </div>
             <h2 class=" hover:text-brands transition text-lg">Free Shipping</h2>
             <p class="text-sm text-gray-400">Pay With Multiple Credit Card</p>
         </div>
-        <div class="p-7 col-span-3">
+        <div class="col-span-6 lg:col-span-3 p-7">
             <div class="mb-7">
                 <img src="/img/Icons/money-guarantee.png" alt="">
             </div>
@@ -21,7 +18,7 @@
             <p class="text-sm text-gray-400">Within 30 day for exchange.</p>
         </div>
 
-        <div class="p-7 col-span-3">
+        <div class="col-span-6 lg:col-span-3 p-7">
             <div class="mb-7">
                 <img src="/img/Icons/free-shipping.png" alt="">
             </div>
@@ -29,7 +26,7 @@
             <p class="text-sm text-gray-400">24 hours a day, 7 days a week</p>
         </div>
 
-        <div class="p-7 col-span-3">
+        <div class="col-span-6 lg:col-span-3 p-7">
             <div class="mb-7">
                 <img src="/img/Icons/flexible-payment.png" alt="">
             </div>
@@ -40,6 +37,7 @@
     </div>
     <!--After Slider End-->
     @include('inc.homepage.offerproduct')
+    @include('inc.homepage.featureproduct')
     <!--Getagary Section Start-->
     <div class="container pt-8 pb-40">
         <h2 class="text-center text-2xl">Product Categories</h2>
@@ -52,7 +50,7 @@
             design review teams</p>
         <div class="grid grid-cols-12 gap-5 items-start">
 
-            <div class="col-span-3 p-4 flex items-center bg-[#F3F6F9] rounded space-x-4 group">
+            <div class="col-span-12 md:col-span-6 lg:col-span-3 p-4 flex items-center bg-[#F3F6F9] rounded space-x-4 group">
                 <div class="w-24">
                     <img class="w-full" src="/img/category-01.png" alt="">
                 </div>
@@ -63,7 +61,7 @@
                         Products</button>
                 </div>
             </div>
-            <div class="col-span-3 p-4 flex items-center bg-[#F3F6F9] rounded space-x-4 group">
+            <div class="col-span-12 md:col-span-6 lg:col-span-3 p-4 flex items-center bg-[#F3F6F9] rounded space-x-4 group">
                 <div class="w-24">
                     <img class="w-full" src="/img/category-02.png" alt="">
                 </div>
@@ -74,7 +72,7 @@
                         Products</button>
                 </div>
             </div>
-            <div class="col-span-3 p-4 flex items-center bg-[#F3F6F9] rounded space-x-4 group">
+            <div class="col-span-12 md:col-span-6 lg:col-span-3 p-4 flex items-center bg-[#F3F6F9] rounded space-x-4 group">
                 <div class="w-24">
                     <img class="w-full" src="/img/category-01.png" alt="">
                 </div>
@@ -85,7 +83,7 @@
                         Products</button>
                 </div>
             </div>
-            <div class="col-span-3 p-4 flex items-center bg-[#F3F6F9] rounded space-x-4 group">
+            <div class="col-span-12 md:col-span-6 lg:col-span-3 p-4 flex items-center bg-[#F3F6F9] rounded space-x-4 group">
                 <div class="w-24">
                     <img class="w-full" src="/img/category-02.png" alt="">
                 </div>
@@ -96,7 +94,7 @@
                         Products</button>
                 </div>
             </div>
-            <div class="col-span-3 p-4 flex items-center bg-[#F3F6F9] rounded space-x-4 group">
+            <div class="col-span-12 md:col-span-6 lg:col-span-3 p-4 flex items-center bg-[#F3F6F9] rounded space-x-4 group">
                 <div class="w-24">
                     <img class="w-full" src="/img/category-01.png" alt="">
                 </div>
@@ -107,7 +105,7 @@
                         Products</button>
                 </div>
             </div>
-            <div class="col-span-3 p-4 flex items-center bg-[#F3F6F9] rounded space-x-4 group">
+            <div class="col-span-12 md:col-span-6 lg:col-span-3 p-4 flex items-center bg-[#F3F6F9] rounded space-x-4 group">
                 <div class="w-24">
                     <img class="w-full" src="/img/category-02.png" alt="">
                 </div>
@@ -118,7 +116,7 @@
                         Products</button>
                 </div>
             </div>
-            <div class="col-span-3 p-4 flex items-center bg-[#F3F6F9] rounded space-x-4 group">
+            <div class="col-span-12 md:col-span-6 lg:col-span-3 p-4 flex items-center bg-[#F3F6F9] rounded space-x-4 group">
                 <div class="w-24">
                     <img class="w-full" src="/img/category-01.png" alt="">
                 </div>
@@ -129,7 +127,7 @@
                         Products</button>
                 </div>
             </div>
-            <div class="col-span-3 p-4 flex items-center bg-[#F3F6F9] rounded space-x-4 group">
+            <div class="col-span-12 md:col-span-6 lg:col-span-3 p-4 flex items-center bg-[#F3F6F9] rounded space-x-4 group">
                 <div class="w-24">
                     <img class="w-full" src="/img/category-02.png" alt="">
                 </div>
@@ -152,7 +150,6 @@
     @include('inc.homepage.blog')
     @include('inc.homepage.instagram')
 @endsection
-
 
 @push('style')
     <style>

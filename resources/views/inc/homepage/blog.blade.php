@@ -4,7 +4,7 @@
 
     <div class="grid grid-cols-12 gap-7">
 
-        <div class=" col-span-4 space-y-3 group ">
+        <div class="col-span-12 md:col-span-4 space-y-3 group ">
             <a href="#" class=" overflow-hidden block ">
                 <img class=" group-hover:scale-110 transition duration-500" src="{{ asset('img/Blog/blog-1.jpg') }}" alt="">
             </a>
@@ -16,7 +16,7 @@
             </div>
         </div>
 
-        <div class=" col-span-4 space-y-3 group ">
+        <div class="col-span-12 md:col-span-4 space-y-3 group ">
             <a href="#" class=" overflow-hidden block ">
                 <img class=" group-hover:scale-110 transition duration-500" src="{{ asset('img/Blog/blog-2.jpg') }}" alt="">
             </a>
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <div class=" col-span-4 space-y-3 group ">
+        <div class="col-span-12 md:col-span-4 space-y-3 group ">
             <a href="#" class=" overflow-hidden block ">
                 <img class=" group-hover:scale-110 transition duration-500" src="{{ asset('img/Blog/blog-3.jpg') }}" alt="">
             </a>

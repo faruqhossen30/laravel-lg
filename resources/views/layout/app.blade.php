@@ -24,8 +24,6 @@
         p {
             font-family: 'PT Sans', sans-serif !important;
         }
-
-
     </style>
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
@@ -35,8 +33,9 @@
 
 <body>
     @include('layout.header')
-
-    @yield('content')
+    <div class="px-3 lg:px-0">
+        @yield('content')
+    </div>
 
     @include('layout.footer')
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>

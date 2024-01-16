@@ -33,63 +33,87 @@
                 </a>
             </li>
 
-            {{-- <li class="menu-title">Apps</li>
-
             <li class="menu-item">
-                <a href="{{ route('second', ['apps', 'calendar']) }}" class="menu-link">
+                <a href="#" class="menu-link">
                     <span class="menu-icon"><i class="mgc_calendar_line"></i></span>
                     <span class="menu-text"> Calendar </span>
                 </a>
             </li>
 
             <li class="menu-item">
-                <a href="{{ route('second', ['apps', 'tickets']) }}" class="menu-link">
-                    <span class="menu-icon"><i class="mgc_coupon_line"></i></span>
-                    <span class="menu-text"> Tickets </span>
-                </a>
-            </li>
-
-            <li class="menu-item">
-                <a href="{{ route('second', ['apps', 'file-manager']) }}" class="menu-link">
-                    <span class="menu-icon"><i class="mgc_folder_2_line"></i></span>
-                    <span class="menu-text"> File Manager </span>
-                </a>
-            </li>
-
-            <li class="menu-item">
-                <a href="{{ route('second', ['apps', 'kanban']) }}" class="menu-link">
-                    <span class="menu-icon"><i class="mgc_task_2_line"></i></span>
-                    <span class="menu-text">Kanban</span>
-                </a>
-            </li>
-
-            <li class="menu-item">
                 <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link">
                     <span class="menu-icon"><i class="mgc_building_2_line"></i></span>
-                    <span class="menu-text"> Project </span>
+                    <span class="menu-text"> Admin </span>
                     <span class="menu-arrow"></span>
                 </a>
 
                 <ul class="sub-menu hidden">
                     <li class="menu-item">
-                        <a href="{{ route('second', ['project', 'list']) }}" class="menu-link">
-                            <span class="menu-text">List</span>
+                        <a href="{{route('admin.index')}}" class="menu-link">
+                            <span class="menu-text">All Admin</span>
+                        </a>
+                    </li>
+                    </li>
+                </ul>
+            </li>
+
+
+            <li class="menu-item">
+                <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link">
+                    <span class="menu-icon"><i class="mgc_building_2_line"></i></span>
+                    <span class="menu-text"> Products </span>
+                    <span class="menu-arrow"></span>
+                </a>
+
+                <ul class="sub-menu hidden">
+                    <li class="menu-item">
+                        <a href="{{route('category.index')}}" class="menu-link">
+                            <span class="menu-text">Category</span>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="{{ route('second', ['project', 'detail']) }}" class="menu-link">
-                            <span class="menu-text">Detail</span>
+                        <a href="{{route('subcategory.index')}}" class="menu-link">
+                            <span class="menu-text">Sub Category</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link">
+                    <span class="menu-icon"><i class="mgc_building_2_line"></i></span>
+                    <span class="menu-text"> Attributes </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <ul class="sub-menu hidden">
+                    <li class="menu-item">
+                        <a href="{{route('category.index')}}" class="menu-link">
+                            <span class="menu-text">Category</span>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="{{ route('second', ['project', 'create']) }}" class="menu-link">
-                            <span class="menu-text">Create</span>
+                        <a href="#" class="menu-link">
+                            <span class="menu-text">Sub Category</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{route('size.index')}}" class="menu-link">
+                            <span class="menu-text">Size</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{route('color.index')}}" class="menu-link">
+                            <span class="menu-text">Color</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{route('tag.index')}}" class="menu-link">
+                            <span class="menu-text">Tag</span>
                         </a>
                     </li>
                 </ul>
             </li>
 
-            <li class="menu-title">Custom</li>
+            {{-- <li class="menu-title">Custom</li>
 
             <li class="menu-item">
                 <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link">

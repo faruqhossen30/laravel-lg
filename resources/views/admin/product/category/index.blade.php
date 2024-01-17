@@ -5,11 +5,11 @@
         <div class="card">
             <div class="card-header">
                 <div class="flex justify-between items-center">
-                    <h4 class="card-title">Header in Gray color</h4>
+                    <h4 class="card-title">Colors</h4>
                     <div class="flex items-center gap-2">
-                        <a href="{{ route('category.create') }}" class="btn-code">
+                        <a href="{{ route('color.create') }}" class="btn-code">
                             <i class="mgc_add_circle_line text-lg"></i>
-                            <span class="ms-2">Add Category</span>
+                            <span class="ms-2">Add Color</span>
                         </a>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
                 <div class="overflow-x-auto">
                     <div class="min-w-full inline-block align-middle">
                         <div class="border rounded-lg overflow-hidden dark:border-gray-700">
-                            <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                            <table id="example" class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
                                 <thead class="bg-gray-50 dark:bg-gray-700">
                                     <tr>
                                         <th scope="col"
@@ -37,22 +37,25 @@
                                     </tr>
                                 </thead>
                                 <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
-
                                     @php
                                         $serial = 1;
                                     @endphp
-                                    @foreach ($categeroies as $category)
+                                    @foreach ($categories as $category)
                                         <tr>
                                             <td
                                                 class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
                                                 {{ $serial++ }} </td>
                                             <td
                                                 class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
-                                                <img src="{{ asset('img/category-01.png') }}" class="h-10" alt="">
+                                                {{ $category->name }}
                                             </td>
                                             <td
                                                 class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
-                                                {{ $category->name }}
+                                                {{ $category->category_id }}
+                                            </td>
+                                            <td
+                                                class="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
+                                                {{ $category->description }}
                                             </td>
                                             <td class="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
                                                 {{-- <a class="text-success hover:text-sky-700" href="#">View</a>
@@ -71,7 +74,7 @@
 
                                                 </a>
 
-                                                <a href="{{route('category.edit', $category->id)}}"
+                                                <a href="{{route('subcategory.edit', $category->id)}}"
                                                     class="py-1 px-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -81,7 +84,7 @@
                                                     </svg>
                                                 </a>
 
-                                                <form action="{{route('category.destroy', $category->id)}}" method="post"
+                                                <form action="{{route('subcategory.destroy', $category->id)}}" method="post"
                                                     class="inline">
                                                     @csrf
                                                     @method('DELETE')
@@ -97,16 +100,15 @@
                                                     </button>
                                                 </form>
 
-
-
-
                                             </td>
                                         </tr>
                                     @endforeach
 
-
                                 </tbody>
                             </table>
+                        </div>
+                        <div class="py-4">
+                            {{$categories->links()}}
                         </div>
                     </div>
                 </div>
@@ -117,6 +119,11 @@
     </div>
 @endsection
 
-@section('script')
-    @vite(['resources/js/pages/highlight.js'])
-@endsection
+@push('styles')
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+@endpush
+
+@push('scripts')
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css"></script>
+@endpush

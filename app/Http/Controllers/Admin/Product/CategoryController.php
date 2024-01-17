@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin\Product;
 use App\Http\Controllers\Controller;
 use App\Models\Product\Category;
 use Illuminate\Http\Request;
-
+use DataTables;
 class CategoryController extends Controller
 {
     /**
@@ -13,10 +13,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categeroies = Category::get();
-
-        // return $categeroies;
-        return view('admin.product.category.index',compact('categeroies'));
+        $categories = Category::paginate(10);
+        return view('admin.product.category.index', compact('categories'));
     }
 
     /**

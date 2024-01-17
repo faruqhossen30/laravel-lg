@@ -27,7 +27,7 @@
             <li class="menu-title">Menu</li>
 
             <li class="menu-item">
-                <a href="{{route('dashboard')}}" class="menu-link">
+                <a href="{{ route('dashboard') }}" class="menu-link">
                     <span class="menu-icon"><i class="mgc_home_3_line"></i></span>
                     <span class="menu-text"> Dashboard </span>
                 </a>
@@ -49,71 +49,61 @@
 
                 <ul class="sub-menu hidden">
                     <li class="menu-item">
-                        <a href="{{route('admin.index')}}" class="menu-link">
+                        <a href="{{ route('admin.index') }}" class="menu-link">
                             <span class="menu-text">All Admin</span>
                         </a>
                     </li>
-                    </li>
-                </ul>
             </li>
+        </ul>
+        </li>
 
 
-            <li class="menu-item">
-                <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link">
-                    <span class="menu-icon"><i class="mgc_building_2_line"></i></span>
-                    <span class="menu-text"> Products </span>
-                    <span class="menu-arrow"></span>
-                </a>
+        <li class="menu-item">
+            <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link">
+                <span class="menu-icon"><i class="mgc_building_2_line"></i></span>
+                <span class="menu-text"> Products </span>
+                <span class="menu-arrow"></span>
+            </a>
 
-                <ul class="sub-menu hidden">
-                    <li class="menu-item">
-                        <a href="{{route('category.index')}}" class="menu-link">
-                            <span class="menu-text">Category</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="{{route('subcategory.index')}}" class="menu-link">
-                            <span class="menu-text">Sub Category</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li class="menu-item">
-                <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link">
-                    <span class="menu-icon"><i class="mgc_building_2_line"></i></span>
-                    <span class="menu-text"> Attributes </span>
-                    <span class="menu-arrow"></span>
-                </a>
-                <ul class="sub-menu hidden">
-                    <li class="menu-item">
-                        <a href="{{route('category.index')}}" class="menu-link">
-                            <span class="menu-text">Category</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">
-                            <span class="menu-text">Sub Category</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="{{route('size.index')}}" class="menu-link">
-                            <span class="menu-text">Size</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="{{route('color.index')}}" class="menu-link">
-                            <span class="menu-text">Color</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="{{route('tag.index')}}" class="menu-link">
-                            <span class="menu-text">Tag</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
+            <ul class="sub-menu hidden">
+                <li class="menu-item">
+                    <a href="{{ route('category.index') }}" class="menu-link">
+                        <span class="menu-text">Category</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{ route('subcategory.index') }}" class="menu-link">
+                        <span class="menu-text">Sub Category</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-item">
+            <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link">
+                <span class="menu-icon"><i class="mgc_building_2_line"></i></span>
+                <span class="menu-text"> Attributes </span>
+                <span class="menu-arrow"></span>
+            </a>
+            <ul class="sub-menu hidden">
+                <li class="menu-item">
+                    <a href="{{ route('size.index') }}" class="menu-link">
+                        <span class="menu-text">Size</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{ route('color.index') }}" class="menu-link">
+                        <span class="menu-text">Color</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{ route('tag.index') }}" class="menu-link">
+                        <span class="menu-text">Tag</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
 
-            {{-- <li class="menu-title">Custom</li>
+        {{-- <li class="menu-title">Custom</li>
 
             <li class="menu-item">
                 <a href="javascript:void(0)" data-fc-type="collapse" class="menu-link">
@@ -554,20 +544,7 @@
             </li> --}}
         </ul>
 
-        <!-- Help Box Widget -->
-        <div class="my-10 mx-5">
-            <div class="help-box p-6 bg-black/5 text-center rounded-md">
-                <div class="flex justify-center mb-4">
-                    <svg width="30" height="18" aria-hidden="true">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0c-4 0-6.5 2-7.5 6 1.5-2 3.25-2.75 5.25-2.25 1.141.285 1.957 1.113 2.86 2.03C17.08 7.271 18.782 9 22.5 9c4 0 6.5-2 7.5-6-1.5 2-3.25 2.75-5.25 2.25-1.141-.285-1.957-1.113-2.86-2.03C20.42 1.728 18.718 0 15 0ZM7.5 9C3.5 9 1 11 0 15c1.5-2 3.25-2.75 5.25-2.25 1.141.285 1.957 1.113 2.86 2.03C9.58 16.271 11.282 18 15 18c4 0 6.5-2 7.5-6-1.5 2-3.25 2.75-5.25 2.25-1.141-.285-1.957-1.113-2.86-2.03C12.92 10.729 11.218 9 7.5 9Z"
-                            fill="#38BDF8"></path>
-                    </svg>
-                </div>
-                <h5 class="mb-2">Unlimited Access</h5>
-                <p class="mb-3">Upgrade to plan to get access to unlimited reports</p>
-                <a href="javascript: void(0);" class="btn btn-sm bg-secondary text-white">Upgrade</a>
-            </div>
-        </div>
+
     </div>
 </div>
 <!-- Sidenav Menu End  -->

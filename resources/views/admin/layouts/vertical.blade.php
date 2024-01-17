@@ -5,6 +5,7 @@
     @include('admin.layouts.shared/title-meta', ['title' => $title])
     @yield('css')
     @include('admin.layouts.shared/head-css')
+    @stack('styles')
 </head>
 
 <body>
@@ -39,7 +40,7 @@
     @include('admin.layouts.shared/footer-scripts')
 
     @vite(['resources/js/app.js'])
-
+    @stack('scripts')
 </body>
 
 

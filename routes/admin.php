@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\Admin\AdminController;
+use App\Http\Controllers\Admin\Admin\RoleController;
 use App\Http\Controllers\Admin\Attribute\ColorController;
 use App\Http\Controllers\Admin\Attribute\SizeController;
 use App\Http\Controllers\Admin\Attribute\TagController;
@@ -35,4 +36,5 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::post('attribute-value/{id}/destroy', [AttributevalueController::class, 'destroy'])->name('attributevalue.destroy');
     // Admin
     Route::resource('admin', AdminController::class);
+    Route::resource('role', RoleController::class);
 });

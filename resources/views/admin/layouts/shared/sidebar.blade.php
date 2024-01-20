@@ -34,7 +34,7 @@
             </li>
 
             <li class="menu-item">
-                <a href="{{route('attribute.index')}}" class="menu-link">
+                <a href="{{ route('attribute.index') }}" class="menu-link">
                     <span class="menu-icon"><i class="mgc_calendar_line"></i></span>
                     <span class="menu-text"> Attribute </span>
                 </a>
@@ -51,6 +51,11 @@
                     <li class="menu-item">
                         <a href="{{ route('admin.index') }}" class="menu-link">
                             <span class="menu-text">All Admin</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="{{ route('role.index') }}" class="menu-link">
+                            <span class="menu-text">Role</span>
                         </a>
                     </li>
             </li>

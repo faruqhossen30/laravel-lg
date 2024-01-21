@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\Product\AttributeController;
 use App\Http\Controllers\Admin\Product\AttributevalueController;
 use App\Http\Controllers\Admin\Product\CategoryController;
 use App\Http\Controllers\Admin\Product\SubcategoryController;
+use App\Http\Controllers\Product\ProductController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoutingController;
 
@@ -21,6 +22,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     // Route::get('{any}', [RoutingController::class, 'root'])->name('any');
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::resource('product', ProductController::class);
     Route::resource('category', CategoryController::class);
     Route::resource('subcategory', SubcategoryController::class);
     Route::resource('size', SizeController::class);

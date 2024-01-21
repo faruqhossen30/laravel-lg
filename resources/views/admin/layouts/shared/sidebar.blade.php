@@ -72,6 +72,11 @@
 
             <ul class="sub-menu hidden">
                 <li class="menu-item">
+                    <a href="{{ route('product.index') }}" class="menu-link">
+                        <span class="menu-text">Product</span>
+                    </a>
+                </li>
+                <li class="menu-item">
                     <a href="{{ route('category.index') }}" class="menu-link">
                         <span class="menu-text">Category</span>
                     </a>

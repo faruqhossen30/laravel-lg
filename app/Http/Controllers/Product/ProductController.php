@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Product;
 
 use App\Http\Controllers\Controller;
+use App\Models\Product\Category;
 use App\Models\Product\Product;
+use App\Models\Product\Subcategory;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -22,7 +24,10 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('admin.product.create');
+        $categories = Category::get();
+        $subcategories = Subcategory::get();
+        // return $subcategories;
+        return view('admin.product.create', compact('categories','subcategories'));
     }
 
     /**
@@ -30,7 +35,22 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+    //    return $request->all();
+
+       $data = [
+        'name' => $request->name,
+        'category' => $request->category,
+        'subcategory' => $request->subcategory,
+        'price' => $request->price,
+        'quantity' => $request->quantity,
+        'puk_code' => $request->puk_code,
+        'status' => $request->mobile,
+
+    ];
+
+    Product::create($data);
+
+    return redirect()->route('admin.product.index');
     }
 
     /**
@@ -38,7 +58,7 @@ class ProductController extends Controller
      */
     public function show(string $id)
     {
-        //
+
     }
 
     /**
